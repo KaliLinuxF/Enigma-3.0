@@ -76,10 +76,10 @@ namespace Enigma_3._0
         }
 
         private void Morze_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            menu_form menu = new menu_form();
+        { 
             this.Hide();
-            menu.Show();
+            menu_form m = new menu_form();
+            m.Show();
         }
     }
 }

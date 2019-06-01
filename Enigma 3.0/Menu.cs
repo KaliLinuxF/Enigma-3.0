@@ -17,25 +17,31 @@ namespace Enigma_3._0
             InitializeComponent();
         }
 
+        Ceaser_Form cf = new Ceaser_Form();
+        Symmetric_Form sf = new Symmetric_Form();
+        Morze m = new Morze();
+
         private void Ceaser(object sender, EventArgs e)
         {
-            Ceaser_Form main_m = new Ceaser_Form();
             this.Hide();
-            main_m.Show();
+            cf.Show();
         }
 
         private void Symmetric(object sender, EventArgs e)
         {
-            Symmetric_Form main_s = new Symmetric_Form();
             this.Hide();
-            main_s.Show();
+            sf.Show();
         }
 
         private void Morze(object sender, EventArgs e)
         {
-            Morze morze = new Morze();
             this.Hide();
-            morze.Show();
+            m.Show();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

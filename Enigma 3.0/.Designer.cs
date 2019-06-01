@@ -33,6 +33,7 @@
             this.button_morze = new System.Windows.Forms.Button();
             this.button_symmetric = new System.Windows.Forms.Button();
             this.button_ceaser = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name_label
@@ -81,11 +82,24 @@
             this.button_ceaser.UseVisualStyleBackColor = true;
             this.button_ceaser.Click += new System.EventHandler(this.Ceaser);
             // 
+            // exit
+            // 
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exit.Location = new System.Drawing.Point(86, 278);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(150, 40);
+            this.exit.TabIndex = 4;
+            this.exit.Text = "Выход";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
             // menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 293);
+            this.ClientSize = new System.Drawing.Size(333, 354);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.button_symmetric);
             this.Controls.Add(this.button_morze);
             this.Controls.Add(this.button_ceaser);
@@ -105,5 +119,6 @@
         private System.Windows.Forms.Button button_morze;
         private System.Windows.Forms.Button button_symmetric;
         private System.Windows.Forms.Button button_ceaser;
+        private System.Windows.Forms.Button exit;
     }
 }

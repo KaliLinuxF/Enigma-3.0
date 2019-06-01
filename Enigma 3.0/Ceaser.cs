@@ -92,8 +92,9 @@ namespace Enigma_3._0
 
         private void Ceaser_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            menu_form menu = new menu_form();
-            menu.Show();
+            this.Hide();
+            menu_form m = new menu_form();
+            m.Show();
         }
 
         private void textBox_result_Enter(object sender, EventArgs e)
